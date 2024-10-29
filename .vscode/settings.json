@@ -1,0 +1,11 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.ts",
+        "cmd": "deno fmt",
+        "message": "Run deno fmt"
+      }
+    ]
+  }
+}

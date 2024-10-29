@@ -1,5 +1,16 @@
 {
   "tasks": {
-    "dev": "deno run -A  --unstable-kv main.ts"
+    "dev": "deno run --watch -A --unstable-kv main.ts",
+    "update-commands": "deno run -A --unstable-kv updateCommand.ts"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "include": [
+        "eqeqeq",
+        "no-non-null-asserted-optional-chain",
+        "no-undef"
+      ]
+    }
   }
 }
